@@ -6,3 +6,7 @@
 
 # lerna files
 /lerna-debug.log
+
+# Netlify Deploy Configuration
+# https://www.sanity.io/plugins/sanity-plugin-dashboard-widget-netlify
+/web/src/dashboardConfig.js
