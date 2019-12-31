@@ -11,7 +11,7 @@
         <img
           alt="Cover image"
           v-if="$page.post.mainImage"
-          :src="$urlForImage($page.post.mainImage, $page.metadata.sanityOptions).width(600).auto('format').url()"
+          :src="$urlForImage($page.post.mainImage, $page.metadata.sanityOptions).width(600).height(200).auto('format').url()"
         />
       </div>
 
@@ -71,11 +71,12 @@ query Post ($id: ID!) {
   }
   post: sanityPost (id: $id) {
     title
-    publishedAt (format: "dddd, MMMM Do, YYYY")
+    publishedAt (format: "dddd, MMMM DD, YYYY")
     categories {
       id
       title
     }
+    tags
     _rawExcerpt
     _rawBody
     mainImage {

@@ -35,7 +35,7 @@
           id
           title
         }
-        publishedAt(format: "dddd, MMMM Do, YYYY")
+        publishedAt(format: "dddd, MMMM DD, YYYY")
         _rawExcerpt
         mainImage {
           asset {
